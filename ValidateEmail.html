@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="TheEmail" placeholder="Enter email addess">
+<input type="button" id="CheckEmail" value="Check" onclick="isEmail();">
+<script>
+    function isEmail() {
+        var str = document.getElementById("TheEmail").value;
+        regexp = /^[A-Za-z0-9]*@+[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+        if(regexp.test(str)) {
+            alert("this is email");
+        }else alert("this is not email");
+    }
+    isEmail();
+
+</script>
+</body>
+</html>
